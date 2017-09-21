@@ -7,6 +7,7 @@ and you have the ability to change the button text during the loading process.
 After the loading is done, the progress is dismissed, the button comes back to an enabled state
 and you can also change the text.
 
+<img src="https://github.com/Rygelouv/Android-LoadingButton/blob/master/Screenshot_1506014029.png" width="200">
 <img src="https://github.com/Rygelouv/Android-LoadingButton/blob/master/Screenshot_1506014020.png" width="200">
 
 
