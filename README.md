@@ -18,7 +18,7 @@ and you can also change the text.
 <img src="https://github.com/Rygelouv/Android-LoadingButton/blob/master/Screenshot_1506014029.png" width="200"> <img src="https://github.com/Rygelouv/Android-LoadingButton/blob/master/Screenshot_1506014020.png" width="200">
 
 
-**This library does not use any other library to do his job it's a very small and lightweight library**
+**This library does not use any other library to do its job. So it's a very small and lightweight library**
 
 Add it to your build.gradle with:
 ```gradle
