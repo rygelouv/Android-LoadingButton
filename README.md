@@ -1,6 +1,7 @@
 # Android LoadingButton
 
 Android LoadingButton is very a small library that let you create a button with a loading state
+and that may improve the UX of your app
 
 Use this library if you don't have enough space to show a progress loading on your screen
 or you dont want to bother with any of that. Android LoadingButton will take care of the 
