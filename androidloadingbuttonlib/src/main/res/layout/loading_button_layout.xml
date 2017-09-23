@@ -3,25 +3,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:gravity="center_horizontal"
+                android:gravity="center"
+
+    android:minHeight="@dimen/dimen_48"
     >
 
     <ProgressBar
         android:id="@+id/progress"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginEnd="4dp"
         android:visibility="gone"
         />
 
-    <Button
+    <TextView
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="validate"
         android:background="@android:color/transparent"
-        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
         />
 
 </LinearLayout>

@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 /**
  * Created by rygelouv on 9/21/17.
@@ -29,7 +30,7 @@ public class LoadingButton extends LinearLayout
     private Drawable background;
     private int textSize;
     private int progressColor;
-    private Button mTextButton;
+    private TextView mTextButton;
     private ProgressBar mProgressBar;
 
     public LoadingButton(Context context)
@@ -75,7 +76,7 @@ public class LoadingButton extends LinearLayout
         this.mProgressBar = mRootView.findViewById(R.id.progress);
 
         if (!TextUtils.isEmpty(text))
-            mTextButton.setText(text);
+            mTextButton.setText(text.toUpperCase());
 
         if (textColor != 0)
             mTextButton.setTextColor(textColor);
@@ -92,37 +93,20 @@ public class LoadingButton extends LinearLayout
         if (progressColor != 0)
             this.mProgressBar.getIndeterminateDrawable().setColorFilter(progressColor,
                     android.graphics.PorterDuff.Mode.MULTIPLY);
-
-        this.mRootView.setOnClickListener(new OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                startLoading("Loading...");
-            }
-        });
-        this.mTextButton.setOnClickListener(new OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                startLoading("Loading...");
-            }
-        });
     }
 
     public void startLoading(String loadingText)
     {
         this.setEnabled(false);
         this.mProgressBar.setVisibility(VISIBLE);
-        this.mTextButton.setText(loadingText);
+        this.mTextButton.setText(loadingText.toUpperCase());
     }
 
     public void stopLoading(String loadingDoneText)
     {
         this.setEnabled(true);
         this.mProgressBar.setVisibility(GONE);
-        this.mTextButton.setText(loadingDoneText);
+        this.mTextButton.setText(loadingDoneText.toUpperCase());
     }
 
     public int getTextColor()
