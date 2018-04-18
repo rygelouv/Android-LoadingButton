@@ -32,7 +32,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.Rygelouv:Android-LoadingButton:1.1.1'
+    compile 'com.github.Rygelouv:Android-LoadingButton:1.2.0'
 }
 ```
 
@@ -67,15 +67,13 @@ You have two method that let you start stop the loading state of the button, for
 Using `startLoading()`
 
 ```java
-((LoadingButton)findViewById(R.id.button_test))
-                        .startLoading("Loading...");
+((LoadingButton)findViewById(R.id.button_test)).startLoading("Loading...");
 ```
 
 Or `stopLoading`
 
-```
-((LoadingButton)findViewById(R.id.button_test))
-                        .stopLoading("Done!");
+```java
+((LoadingButton)findViewById(R.id.button_test)).stopLoading("Done!");
 ```
 
 # Credits
