@@ -32,7 +32,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.Rygelouv:Android-LoadingButton:1.2.0'
+    compile 'com.github.rygelouv:Android-LoadingButton:1.2.0'
 }
 ```
 
