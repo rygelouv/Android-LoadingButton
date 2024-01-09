@@ -1,5 +1,8 @@
 # Deprecated
 
+This project is deprecated and no longer maintained. Doing loading button is now easy with Jetpack Compose
+
+
 ## Android LoadingButton
 
 Android LoadingButton is very a small library that let you create a button with a loading state
